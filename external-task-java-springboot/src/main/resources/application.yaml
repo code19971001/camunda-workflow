@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+camunda.bpm.client:
+  base-url: http://localhost:8080/engine-rest
+#  subscriptions:
+#    creditScoreChecker:
+#      process-definition-key: process_01_service_task
+#      include-extension-properties: true
+#      variable-names: defaultScore
+  async-response-timeout: 20000  #长轮询的间隔时间
+  max-tasks: 1  #最大任务数
+  lock-duration: 10000  #全局订阅topic上锁的时间，锁住期间其他的订阅者无法拉取任务
+  worker-id: java-springboot-agent-001
+  basic-auth:
+    username: code1997
+    password: code1997

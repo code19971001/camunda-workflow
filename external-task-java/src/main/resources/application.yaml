@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+#camunda.bpm.client:
+#  base-url: http://localhost:8080/engine-rest
+#  subscriptions:
+#    creditScoreChecker:
+#      process-definition-key: shopping_process
+#      include-extension-properties: true
